@@ -1,0 +1,23 @@
+# Deployment checklist
+
+- [ ] Regenerate the Razorpay Test Secret if it has been shared anywhere.
+- [ ] Upload this project to a private or public GitHub repository (no secrets are included).
+- [ ] Import the GitHub repository into Netlify.
+- [ ] Add `RAZORPAY_KEY_ID` in Netlify Environment Variables.
+- [ ] Add `RAZORPAY_KEY_SECRET` in Netlify Environment Variables.
+- [ ] Set `MEMBERSHIP_FEE`.
+- [ ] Set/update college, department and society details.
+- [ ] Keep `GOOGLE_FORM_URL` as provided or replace it later.
+- [ ] Obtain a Google Forms pre-filled link and copy the `entry.xxxxx` numbers into the `GOOGLE_ENTRY_*` variables.
+- [ ] Ensure the Google Form is linked to the correct Google Sheet.
+- [ ] Ensure the Google Form has a Digital Photograph File Upload question if required.
+- [ ] Deploy.
+- [ ] Make a Razorpay Test Mode payment.
+- [ ] Confirm server verification succeeds.
+- [ ] Confirm the Google Form opens after payment.
+- [ ] Confirm student + payment fields are pre-filled after the entry IDs are configured.
+- [ ] Upload a test photo and submit the Google Form.
+- [ ] Confirm the row appears in the linked Google Sheet.
+- [ ] Configure Razorpay webhook as `https://YOUR-DOMAIN/api/webhook`.
+- [ ] Test webhook delivery.
+- [ ] Only after complete testing, configure Live Razorpay keys in Netlify.
